@@ -1,0 +1,42 @@
+---
+title: 'Sistem Gereksinimleri'
+description: 'Sistem Gereksinimlerini görüntülemektesiniz.'
+icon: 'circle-exclamation'
+---
+
+# PHP Ayarları
+
+<Card title="PHP 7.4" icon="square-check" horizontal />
+<Card title="MySQL ≥ 5.6 veya MariaDB v10" icon="square-check" horizontal />
+<Card title="ionCube Loader 10" icon="square-check" horizontal />
+<Card title="cURL" icon="square-check" horizontal />
+<Card title="json" icon="square-check" horizontal />
+<Card title="pdo" icon="square-check" horizontal />
+<Card title="zip" icon="square-check" horizontal />
+<Card title="mbstring" icon="square-check" horizontal />
+<Card title="imagick / gmagick" icon="square-check" horizontal />
+<Card title="fileinfo" icon="square-check" horizontal />
+<Card title="eval()" icon="square-check" horizontal />
+<Card title="php.ini" icon="square" horizontal />
+<Card title="memory_limit (512M)" icon="square" horizontal />
+<Card title="max_execution_time (3000)" icon="square" horizontal />
+<Card title="max_input_time (6000)" icon="square" horizontal />
+<Card title="post_max_size (512M)" icon="square" horizontal />
+<Card title="upload_max_filesize (512M)" icon="square" horizontal />
+<Card title="opcache.enable (ON)" icon="square" horizontal />
+<Card title="file_uploads (ON)" icon="square-check" horizontal />
+
+# SQL MODE
+
+```sql
+ERROR_FOR_DIVISION_BY_ZERO,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION
+```
+### Hostinginizde SQL mode ayarını yapmak için aşağıdaki kodu SQL kısmına yapıştırmanız gerekmektedir.
+
+```sql
+SET GLOBAL SQL_MODE = "ERROR_FOR_DIVISION_BY_ZERO,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION";
+SET SESSION SQL_MODE = "ERROR_FOR_DIVISION_BY_ZERO,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION";
+SET SQL_MODE = "ERROR_FOR_DIVISION_BY_ZERO,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION";
+```
+
+

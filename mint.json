@@ -8,7 +8,7 @@
   "favicon": "/logo/favicon.png",
   "colors": {
     "primary": "#3448ff",
-    "light": "#07C983",
+    "light": "#3448FF",
     "dark": "#0D9373",
     "anchors": {
       "from": "#0D9373",
@@ -30,36 +30,11 @@
   "navigation": [
     {
       "group": "Başlangıç",
-      "pages": [
-        "introduction",
-        "quickstart",
-        "development"
-      ]
+      "pages": ["introduction", "system-requirements", "setup"]
     },
     {
-      "group": "Essentials",
-      "pages": [
-        "essentials/markdown",
-        "essentials/code",
-        "essentials/images",
-        "essentials/settings",
-        "essentials/navigation",
-        "essentials/reusable-snippets"
-      ]
-    },
-    {
-      "group": "API Documentation",
-      "pages": [
-        "api-reference/introduction"
-      ]
-    },
-    {
-      "group": "Endpoint Examples",
-      "pages": [
-        "api-reference/endpoint/get",
-        "api-reference/endpoint/create",
-        "api-reference/endpoint/delete"
-      ]
+      "group": "Özellikler",
+      "pages": ["features/roles","features/products"]
     }
   ],
   "footerSocials": {

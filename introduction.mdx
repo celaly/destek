@@ -1,6 +1,7 @@
 ---
 title: 'Başlangıç'
 description: 'Kuruluma başlamanın en iyi yolu'
+icon: 'house'
 ---
 
 <img
@@ -16,11 +17,11 @@ alt="Hero Dark"
 
 ## Kurulum Öncesi
 
-Domain ile Nameserver Bağlantısı yaparak sitenizi yayına almanız gerekmektedir.
+Alan adı ile nameserver bağlantısı yaparak sitenizi yayına almanız gerekmektedir.
 
 <Steps>
 <Step title="Alan Adı ile Hosting Bağlama">
-  Hosting satın aldığınız firmanın nameserver adreslerini öğrenin. (Eğer bulamazsanız destek talebi açarak öğrenebilirsiniz.)
+  Hosting satın aldığınız firmanın nameserver adreslerini öğreniniz.
   ### Hostlina için Nameserver Adresleri
   ```md
   cp-ns1.hostlina.net
@@ -29,48 +30,17 @@ Domain ile Nameserver Bağlantısı yaparak sitenizi yayına almanız gerekmekte
     Ardından DNS sayfasından nameserver adreslerini güncelleyin.
 
     Nameserver güncelleme işlemi 24 saat içerisinde tamamlanacaktır.
+
+    Eğer Cloudflare kullanıyorsanız A kaydı oluşturup ip adresinizi ekleyin.
 </Step>
-<Step title="Second Step">
-  These are instructions or content that only pertain to the second step.
+<Step title="Veritabanı Oluşturma">
+  cPanel veya Plesk hangisini kullanıyorsanız veritabanı oluşturun. cPanel için ayrıyetten yetkilendirme yapmanız gerekmektedir.
 </Step>
-<Step title="Third Step">
-  These are instructions or content that only pertain to the third step.
+<Step title="Dosyaları Yükleme">
+    cPanel kullanıyorsanız public_html dizinine dosyalarınızı yükleyin. Plesk kullanıyorsanız httpdocs dizinine yükleyin. Şimdi bağladığınız domain adresine giderek sitenizi görebilirsiniz.
 </Step>
 </Steps>
 
 
 
-## Make it yours
 
-Update your docs to your brand and add valuable content for the best user conversion.
-
-<CardGroup cols={2}>
-<Card
-  title="Customize Style"
-  icon="palette"
-  href="https://mintlify.com/docs/settings/global"
->
-  Customize your docs to your company's colors and brands
-</Card>
-<Card
-  title="Reference APIs"
-  icon="code"
-  href="https://mintlify.com/docs/api-playground/openapi"
->
-  Automatically generate endpoints from an OpenAPI spec
-</Card>
-<Card
-  title="Add Components"
-  icon="screwdriver-wrench"
-  href="https://mintlify.com/docs/components/accordion"
->
-  Build interactive features and designs to guide your users
-</Card>
-<Card
-  title="Get Inspiration"
-  icon="stars"
-  href="https://mintlify.com/customers"
->
-  Check out our showcase of our favorite documentation
-</Card>
-</CardGroup>
